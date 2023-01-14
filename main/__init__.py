@@ -7,7 +7,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 # variables
-API_ID = 17983098
+API_ID = int(17983098)
 API_HASH = "ee28199396e0925f1f44d945ac174f64"
 BOT_TOKEN = "5596598781:AAEVMvT3LNz2wrSYiy69CbuOPvHAcTkmKvg"
 BOT_UN = "Fbmessenger1235bot"
