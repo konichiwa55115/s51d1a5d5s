@@ -29,21 +29,6 @@ def mention(name, id):
 
 #Forcesub-----------------------------------------------------------------------------------
 
-async def force_sub(id):
-    FORCESUB = config("FORCESUB", default="-1001230414925")
-    if not str(FORCESUB).startswith("-100"):
-        FORCESUB = int("-100" + str(FORCESUB))
-    ok = False
-    try:
-        x = await Drone(GetParticipantRequest(channel=int(FORCESUB), participant=int(id)))
-        left = x.stringify()
-        if 'left' in left:
-            ok = True
-        else:
-            ok = False
-    except UserNotParticipantError:
-        ok = True 
-    return ok
 
 #Thumbnail--------------------------------------------------------------------------------------------------------------
 
